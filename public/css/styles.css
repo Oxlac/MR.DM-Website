@@ -271,6 +271,11 @@ footer .cp {
   .cursor {
     display: none;
   }
+
+  iframe {
+    width: 90vw;
+    min-height: 170px;
+  }
 }
 
 /*--------------------------------------------------------------
