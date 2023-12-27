@@ -178,11 +178,15 @@ body {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-decoration: none;
+  text-decoration: none;
 }
 
 .button-1:hover,
 .button-1:focus {
   background-color: #ff9100a9;
+  text-decoration: none;
+  color: white;
 }
 
 /*Info Section*/
