@@ -31,7 +31,11 @@ Classes
 
    Bases: :py:obj:`kivy.uix.screenmanager.Screen`
 
-   Class for the welcome screen
+   .. image:: https://raw.githubusercontent.com/Oxlac/MR.DM/main/docs/images/login-screen.png
+
+
+   Welcome Screen/Login Screen Class. This screen contains methods that deal with adding new users and logging in existing users.
+   When an user launches the program for the first time,this scren will display no accounts.
 
    .. py:attribute:: session
 
