@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ui.messagescreen &#8212; Mr.DM  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=eafc0fe6" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'autoapi/ui/messagescreen/index';</script>
+    <link rel="icon" href="../../../_static/icon.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../docs.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.png" class="logo__image only-light" alt="Mr.DM  documentation - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.png" class="logo__image only-dark" alt="Mr.DM  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">MIT License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/autoapi/ui/messagescreen/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>ui.messagescreen</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-contents">Package Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen"><code class="docutils literal notranslate"><span class="pre">MessageScreen</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.data"><code class="docutils literal notranslate"><span class="pre">MessageScreen.data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.message</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.reel_link"><code class="docutils literal notranslate"><span class="pre">MessageScreen.reel_link</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.session"><code class="docutils literal notranslate"><span class="pre">MessageScreen.session</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.processed_accounts"><code class="docutils literal notranslate"><span class="pre">MessageScreen.processed_accounts</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_message_menu"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_message_menu</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">MessageScreen.data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.messages"><code class="docutils literal notranslate"><span class="pre">MessageScreen.messages</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.show_add_message_menu"><code class="docutils literal notranslate"><span class="pre">MessageScreen.show_add_message_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_text_message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_text_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_link_message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_link_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_post_message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_post_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.check_if_can_add"><code class="docutils literal notranslate"><span class="pre">MessageScreen.check_if_can_add()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.back"><code class="docutils literal notranslate"><span class="pre">MessageScreen.back()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.confirm_send"><code class="docutils literal notranslate"><span class="pre">MessageScreen.confirm_send()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.navigate_to_progress"><code class="docutils literal notranslate"><span class="pre">MessageScreen.navigate_to_progress()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-ui.messagescreen">
+<span id="ui-messagescreen"></span><h1><a class="reference internal" href="#module-ui.messagescreen" title="ui.messagescreen"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ui.messagescreen</span></code></a><a class="headerlink" href="#module-ui.messagescreen" title="Link to this heading">#</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="messagescreen/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ui.messagescreen.messagescreen</span></code></a></li>
+</ul>
+</div>
+</section>
+<section id="package-contents">
+<h2>Package Contents<a class="headerlink" href="#package-contents" title="Link to this heading">#</a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ui.messagescreen.MessageScreen" title="ui.messagescreen.MessageScreen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MessageScreen</span></code></a></p></td>
+<td><p>Screen is an element intended to be used with a <code class="xref py py-class docutils literal notranslate"><span class="pre">ScreenManager</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ui.messagescreen.</span></span><span class="sig-name descname"><span class="pre">MessageScreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivy.uix.screenmanager.Screen</span></code></p>
+<p>Screen is an element intended to be used with a <code class="xref py py-class docutils literal notranslate"><span class="pre">ScreenManager</span></code>.
+Check module documentation for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Events<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>on_pre_enter</cite>: ()</dt><dd><p>Event fired when the screen is about to be used: the entering
+animation is started.</p>
+</dd>
+<dt><cite>on_enter</cite>: ()</dt><dd><p>Event fired when the screen is displayed: the entering animation is
+complete.</p>
+</dd>
+<dt><cite>on_pre_leave</cite>: ()</dt><dd><p>Event fired when the screen is about to be removed: the leaving
+animation is started.</p>
+</dd>
+<dt><cite>on_leave</cite>: ()</dt><dd><p>Event fired when the screen is removed: the leaving animation is
+finished.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<div class="versionchanged">
+<p><span class="versionmodified changed">Changed in version 1.6.0: </span>Events <cite>on_pre_enter</cite>, <cite>on_enter</cite>, <cite>on_pre_leave</cite> and <cite>on_leave</cite> were
+added.</p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#ui.messagescreen.MessageScreen.data" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.message">
+<span class="sig-name descname"><span class="pre">message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ui.messagescreen.MessageScreen.message" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.reel_link">
+<span class="sig-name descname"><span class="pre">reel_link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#ui.messagescreen.MessageScreen.reel_link" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.session">
+<span class="sig-name descname"><span class="pre">session</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">selenium.webdriver.Chrome</span></em><a class="headerlink" href="#ui.messagescreen.MessageScreen.session" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.processed_accounts">
+<span class="sig-name descname"><span class="pre">processed_accounts</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#ui.messagescreen.MessageScreen.processed_accounts" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.add_message_menu">
+<span class="sig-name descname"><span class="pre">add_message_menu</span></span><a class="headerlink" href="#ui.messagescreen.MessageScreen.add_message_menu" title="Link to this definition">#</a></dt>
+<dd><p>Stores an instance of the add message menu</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#id0" title="Link to this definition">#</a></dt>
+<dd><p>Stores the Target Account data sent from the account select screen</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.messages">
+<span class="sig-name descname"><span class="pre">messages</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#ui.messagescreen.MessageScreen.messages" title="Link to this definition">#</a></dt>
+<dd><p>Stores the messages to be sent. Each message is a dictionary representing the
+message type and the message content</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.show_add_message_menu">
+<span class="sig-name descname"><span class="pre">show_add_message_menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.show_add_message_menu" title="Link to this definition">#</a></dt>
+<dd><p>Shows the add message menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.add_text_message">
+<span class="sig-name descname"><span class="pre">add_text_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.add_text_message" title="Link to this definition">#</a></dt>
+<dd><p>Adds a text message to the message box</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.add_link_message">
+<span class="sig-name descname"><span class="pre">add_link_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.add_link_message" title="Link to this definition">#</a></dt>
+<dd><p>Adds a link message to the message box</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.add_post_message">
+<span class="sig-name descname"><span class="pre">add_post_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.add_post_message" title="Link to this definition">#</a></dt>
+<dd><p>Adds a post message to the message box</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.check_if_can_add">
+<span class="sig-name descname"><span class="pre">check_if_can_add</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.check_if_can_add" title="Link to this definition">#</a></dt>
+<dd><p>Checks if we are under the maximum number of messages</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.back">
+<span class="sig-name descname"><span class="pre">back</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.back" title="Link to this definition">#</a></dt>
+<dd><p>Goes back to the account select screen</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.confirm_send">
+<span class="sig-name descname"><span class="pre">confirm_send</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.confirm_send" title="Link to this definition">#</a></dt>
+<dd><p>Confirms that the user wants to send the messages</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.messagescreen.MessageScreen.navigate_to_progress">
+<span class="sig-name descname"><span class="pre">navigate_to_progress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.messagescreen.MessageScreen.navigate_to_progress" title="Link to this definition">#</a></dt>
+<dd><p>Navigates to the progress screen</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-contents">Package Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen"><code class="docutils literal notranslate"><span class="pre">MessageScreen</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.data"><code class="docutils literal notranslate"><span class="pre">MessageScreen.data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.message</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.reel_link"><code class="docutils literal notranslate"><span class="pre">MessageScreen.reel_link</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.session"><code class="docutils literal notranslate"><span class="pre">MessageScreen.session</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.processed_accounts"><code class="docutils literal notranslate"><span class="pre">MessageScreen.processed_accounts</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_message_menu"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_message_menu</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id0"><code class="docutils literal notranslate"><span class="pre">MessageScreen.data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.messages"><code class="docutils literal notranslate"><span class="pre">MessageScreen.messages</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.show_add_message_menu"><code class="docutils literal notranslate"><span class="pre">MessageScreen.show_add_message_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_text_message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_text_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_link_message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_link_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.add_post_message"><code class="docutils literal notranslate"><span class="pre">MessageScreen.add_post_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.check_if_can_add"><code class="docutils literal notranslate"><span class="pre">MessageScreen.check_if_can_add()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.back"><code class="docutils literal notranslate"><span class="pre">MessageScreen.back()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.confirm_send"><code class="docutils literal notranslate"><span class="pre">MessageScreen.confirm_send()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.messagescreen.MessageScreen.navigate_to_progress"><code class="docutils literal notranslate"><span class="pre">MessageScreen.navigate_to_progress()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Oxlac LLP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Oxlac LLP.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

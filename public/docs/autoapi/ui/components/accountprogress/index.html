@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ui.components.accountprogress &#8212; Mr.DM  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=eafc0fe6" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'autoapi/ui/components/accountprogress/index';</script>
+    <link rel="icon" href="../../../../_static/icon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../../docs.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/logo.png" class="logo__image only-light" alt="Mr.DM  documentation - Home"/>
+    <script>document.write(`<img src="../../../../_static/logo.png" class="logo__image only-dark" alt="Mr.DM  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license.html">MIT License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/autoapi/ui/components/accountprogress/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>ui.components.accountprogress</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.CustomIcon"><code class="docutils literal notranslate"><span class="pre">CustomIcon</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressPopup"><code class="docutils literal notranslate"><span class="pre">ProgressPopup</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressPopup.parent_container"><code class="docutils literal notranslate"><span class="pre">ProgressPopup.parent_container</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem"><code class="docutils literal notranslate"><span class="pre">ProgressItem</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_name"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_name</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_thread"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_thread</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_progress"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_progress</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_max"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_max</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.event"><code class="docutils literal notranslate"><span class="pre">ProgressItem.event</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.cancel_task"><code class="docutils literal notranslate"><span class="pre">ProgressItem.cancel_task()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress"><code class="docutils literal notranslate"><span class="pre">AccountProgress</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.loading"><code class="docutils literal notranslate"><span class="pre">AccountProgress.loading</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.tasks</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.popup"><code class="docutils literal notranslate"><span class="pre">AccountProgress.popup</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.popup_shown"><code class="docutils literal notranslate"><span class="pre">AccountProgress.popup_shown</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.overall_progress"><code class="docutils literal notranslate"><span class="pre">AccountProgress.overall_progress</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_touch_down"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_touch_down()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_loading"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_loading()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.check_if_can_add_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.check_if_can_add_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.add_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.add_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.get_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.get_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.update_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.update_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_tasks()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_release"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_release()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.open_menu"><code class="docutils literal notranslate"><span class="pre">AccountProgress.open_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.close_menu"><code class="docutils literal notranslate"><span class="pre">AccountProgress.close_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.clear_finished_tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.clear_finished_tasks()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.cancel_all_tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.cancel_all_tasks()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-ui.components.accountprogress">
+<span id="ui-components-accountprogress"></span><h1><a class="reference internal" href="#module-ui.components.accountprogress" title="ui.components.accountprogress"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ui.components.accountprogress</span></code></a><a class="headerlink" href="#module-ui.components.accountprogress" title="Link to this heading">#</a></h1>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ui.components.accountprogress.CustomIcon" title="ui.components.accountprogress.CustomIcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CustomIcon</span></code></a></p></td>
+<td><p>Icon class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ui.components.accountprogress.ProgressPopup" title="ui.components.accountprogress.ProgressPopup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProgressPopup</span></code></a></p></td>
+<td><p>Card class.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ui.components.accountprogress.ProgressItem" title="ui.components.accountprogress.ProgressItem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ProgressItem</span></code></a></p></td>
+<td><p>RelativeLayout class, see module documentation for more information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#ui.components.accountprogress.AccountProgress" title="ui.components.accountprogress.AccountProgress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AccountProgress</span></code></a></p></td>
+<td><p>This <a class="reference external" href="https://en.wikipedia.org/wiki/Mixin">mixin</a> class provides</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="ui.components.accountprogress.CustomIcon">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ui.components.accountprogress.</span></span><span class="sig-name descname"><span class="pre">CustomIcon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.CustomIcon" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivymd.uix.label.MDIcon</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivymd.uix.behaviors.RotateBehavior</span></code></p>
+<p>Icon class.</p>
+<p>For more information, see in the <code class="xref py py-class docutils literal notranslate"><span class="pre">MDLabel</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MDFloatLayout</span></code> classes documentation.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressPopup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ui.components.accountprogress.</span></span><span class="sig-name descname"><span class="pre">ProgressPopup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent_container</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.ProgressPopup" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivymd.uix.card.MDCard</span></code></p>
+<p>Card class.</p>
+<p>For more information, see in the
+<code class="xref py py-class docutils literal notranslate"><span class="pre">DeclarativeBehavior</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">MDAdaptiveWidget</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">ThemableBehavior</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">BackgroundColorBehavior</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">RectangularRippleBehavior</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">CommonElevationBehavior</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">FocusBehavior</span></code> and
+<code class="xref py py-class docutils literal notranslate"><span class="pre">BoxLayout</span></code> and
+classes documentation.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressPopup.parent_container">
+<span class="sig-name descname"><span class="pre">parent_container</span></span><a class="headerlink" href="#ui.components.accountprogress.ProgressPopup.parent_container" title="Link to this definition">#</a></dt>
+<dd><p>Stores the popup object</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ui.components.accountprogress.</span></span><span class="sig-name descname"><span class="pre">ProgressItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivy.uix.relativelayout.RelativeLayout</span></code></p>
+<p>RelativeLayout class, see module documentation for more information.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem.task_name">
+<span class="sig-name descname"><span class="pre">task_name</span></span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem.task_name" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem.task_thread">
+<span class="sig-name descname"><span class="pre">task_thread</span></span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem.task_thread" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem.task_progress">
+<span class="sig-name descname"><span class="pre">task_progress</span></span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem.task_progress" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem.task_max">
+<span class="sig-name descname"><span class="pre">task_max</span></span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem.task_max" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem.event">
+<span class="sig-name descname"><span class="pre">event</span></span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem.event" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.ProgressItem.cancel_task">
+<span class="sig-name descname"><span class="pre">cancel_task</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.ProgressItem.cancel_task" title="Link to this definition">#</a></dt>
+<dd><p>Cancels the task</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ui.components.accountprogress.</span></span><span class="sig-name descname"><span class="pre">AccountProgress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivy.uix.behaviors.ButtonBehavior</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivy.uix.floatlayout.FloatLayout</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivymd.theming.ThemableBehavior</span></code></p>
+<p>This <a class="reference external" href="https://en.wikipedia.org/wiki/Mixin">mixin</a> class provides
+<code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code> behavior. Please see the
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">button</span> <span class="pre">behaviors</span> <span class="pre">module</span></code> documentation
+for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Events<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>on_press</cite></dt><dd><p>Fired when the button is pressed.</p>
+</dd>
+<dt><cite>on_release</cite></dt><dd><p>Fired when the button is released (i.e. the touch/click that
+pressed the button goes away).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.loading">
+<span class="sig-name descname"><span class="pre">loading</span></span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.loading" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.tasks">
+<span class="sig-name descname"><span class="pre">tasks</span></span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.tasks" title="Link to this definition">#</a></dt>
+<dd><p>List of tasks to be completed. Stores the task name and
+its current state. Acts as the reference for all tasks</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.popup">
+<span class="sig-name descname"><span class="pre">popup</span></span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.popup" title="Link to this definition">#</a></dt>
+<dd><p>Stores the popup object</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.popup_shown">
+<span class="sig-name descname"><span class="pre">popup_shown</span></span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.popup_shown" title="Link to this definition">#</a></dt>
+<dd><p>Stores whether the popup is shown or not</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.overall_progress">
+<span class="sig-name descname"><span class="pre">overall_progress</span></span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.overall_progress" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.on_touch_down">
+<span class="sig-name descname"><span class="pre">on_touch_down</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">touch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.on_touch_down" title="Link to this definition">#</a></dt>
+<dd><p>Receive a touch down event.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt><cite>touch</cite>: <code class="xref py py-class docutils literal notranslate"><span class="pre">MotionEvent</span></code> class</dt><dd><p>Touch received. The touch is in parent coordinates. See
+<code class="xref py py-mod docutils literal notranslate"><span class="pre">relativelayout</span></code> for a discussion on
+coordinate systems.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool
+If True, the dispatching of the touch event will stop.
+If False, the event will continue to be dispatched to the rest
+of the widget tree.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.on_loading">
+<span class="sig-name descname"><span class="pre">on_loading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.on_loading" title="Link to this definition">#</a></dt>
+<dd><p>Called when the loading property is changed</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.check_if_can_add_task">
+<span class="sig-name descname"><span class="pre">check_if_can_add_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.check_if_can_add_task" title="Link to this definition">#</a></dt>
+<dd><p>Checks if a task can be added to the list of tasks</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.add_task">
+<span class="sig-name descname"><span class="pre">add_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ast.Dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.add_task" title="Link to this definition">#</a></dt>
+<dd><p>Adds a task to the list of tasks</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.get_task">
+<span class="sig-name descname"><span class="pre">get_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.get_task" title="Link to this definition">#</a></dt>
+<dd><p>Gets a task from the list of tasks</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.update_task">
+<span class="sig-name descname"><span class="pre">update_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">progress</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.update_task" title="Link to this definition">#</a></dt>
+<dd><p>Updates a task progress in the list of tasks</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.on_tasks">
+<span class="sig-name descname"><span class="pre">on_tasks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.on_tasks" title="Link to this definition">#</a></dt>
+<dd><p>Used to update the summary progress UI</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.on_release">
+<span class="sig-name descname"><span class="pre">on_release</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.on_release" title="Link to this definition">#</a></dt>
+<dd><p>Opens menu to show progress of tasks</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.open_menu">
+<span class="sig-name descname"><span class="pre">open_menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.open_menu" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.close_menu">
+<span class="sig-name descname"><span class="pre">close_menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.close_menu" title="Link to this definition">#</a></dt>
+<dd><p>Closes the menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.clear_finished_tasks">
+<span class="sig-name descname"><span class="pre">clear_finished_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.clear_finished_tasks" title="Link to this definition">#</a></dt>
+<dd><p>Clears all the finished tasks</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.components.accountprogress.AccountProgress.cancel_all_tasks">
+<span class="sig-name descname"><span class="pre">cancel_all_tasks</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.components.accountprogress.AccountProgress.cancel_all_tasks" title="Link to this definition">#</a></dt>
+<dd><p>Cancels all the tasks</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.CustomIcon"><code class="docutils literal notranslate"><span class="pre">CustomIcon</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressPopup"><code class="docutils literal notranslate"><span class="pre">ProgressPopup</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressPopup.parent_container"><code class="docutils literal notranslate"><span class="pre">ProgressPopup.parent_container</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem"><code class="docutils literal notranslate"><span class="pre">ProgressItem</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_name"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_name</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_thread"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_thread</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_progress"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_progress</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.task_max"><code class="docutils literal notranslate"><span class="pre">ProgressItem.task_max</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.event"><code class="docutils literal notranslate"><span class="pre">ProgressItem.event</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.ProgressItem.cancel_task"><code class="docutils literal notranslate"><span class="pre">ProgressItem.cancel_task()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress"><code class="docutils literal notranslate"><span class="pre">AccountProgress</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.loading"><code class="docutils literal notranslate"><span class="pre">AccountProgress.loading</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.tasks</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.popup"><code class="docutils literal notranslate"><span class="pre">AccountProgress.popup</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.popup_shown"><code class="docutils literal notranslate"><span class="pre">AccountProgress.popup_shown</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.overall_progress"><code class="docutils literal notranslate"><span class="pre">AccountProgress.overall_progress</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_touch_down"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_touch_down()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_loading"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_loading()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.check_if_can_add_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.check_if_can_add_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.add_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.add_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.get_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.get_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.update_task"><code class="docutils literal notranslate"><span class="pre">AccountProgress.update_task()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_tasks()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.on_release"><code class="docutils literal notranslate"><span class="pre">AccountProgress.on_release()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.open_menu"><code class="docutils literal notranslate"><span class="pre">AccountProgress.open_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.close_menu"><code class="docutils literal notranslate"><span class="pre">AccountProgress.close_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.clear_finished_tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.clear_finished_tasks()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.components.accountprogress.AccountProgress.cancel_all_tasks"><code class="docutils literal notranslate"><span class="pre">AccountProgress.cancel_all_tasks()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Oxlac LLP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Oxlac LLP.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

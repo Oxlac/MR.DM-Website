@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ui.accountselectscreen.accountselectscreen &#8212; Mr.DM  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=eafc0fe6" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script src="../../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'autoapi/ui/accountselectscreen/accountselectscreen/index';</script>
+    <link rel="icon" href="../../../../_static/icon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../../docs.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/logo.png" class="logo__image only-light" alt="Mr.DM  documentation - Home"/>
+    <script>document.write(`<img src="../../../../_static/logo.png" class="logo__image only-dark" alt="Mr.DM  documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../license.html">MIT License</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../_sources/autoapi/ui/accountselectscreen/accountselectscreen/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>ui.accountselectscreen.accountselectscreen</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.addmenu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.addmenu</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.mainmenu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.mainmenu</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.session"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.session</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.dialog</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.data"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.selected"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.selected</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.table"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.table</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.content_cls"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.content_cls</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_temp_data"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.csv_temp_data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_failed_data"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.csv_failed_data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.on_enter"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.on_enter()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.create_datatable"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.create_datatable()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.edit_selection"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.edit_selection()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_delete"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.verify_delete()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.delete_selected"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.delete_selected()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.open_filepicker"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.open_filepicker()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.export_csv"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.export_csv()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.import_csv"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.import_csv()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._import_csv_file"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._import_csv_file()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.verify_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._verify_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._verify_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dont_verify_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.dont_verify_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_hashtag_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_hashtag_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_follower_popup"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_follower_popup()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_follow_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.get_follow_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_follow_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._get_follow_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_following_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_following_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_following_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.get_following_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_following_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._get_following_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_manual_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_manual_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.add_manual_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.add_manual_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_hashtag_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._get_hashtag_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._update_table"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._update_table()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_mainmenu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_mainmenu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_add_menu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_add_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.navigate_to_message"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.navigate_to_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_settings_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_settings_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.launch_instance"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.launch_instance()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_about_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_about_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.switch_user"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.switch_user()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="module-ui.accountselectscreen.accountselectscreen">
+<span id="ui-accountselectscreen-accountselectscreen"></span><h1><a class="reference internal" href="#module-ui.accountselectscreen.accountselectscreen" title="ui.accountselectscreen.accountselectscreen"><code class="xref py py-mod docutils literal notranslate"><span class="pre">ui.accountselectscreen.accountselectscreen</span></code></a><a class="headerlink" href="#module-ui.accountselectscreen.accountselectscreen" title="Link to this heading">#</a></h1>
+<section id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">#</a></h2>
+<section id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Link to this heading">#</a></h3>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen" title="ui.accountselectscreen.accountselectscreen.AccountSelectScreen"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AccountSelectScreen</span></code></a></p></td>
+<td><p>Represents the data selection Screen.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ui.accountselectscreen.accountselectscreen.</span></span><span class="sig-name descname"><span class="pre">AccountSelectScreen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-obj docutils literal notranslate"><span class="pre">kivy.uix.screenmanager.Screen</span></code></p>
+<p>Represents the data selection Screen.
+Allows the user to enter the accounts to message
+by manually entering them, from their followers
+or from a certain hashtag</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.addmenu">
+<span class="sig-name descname"><span class="pre">addmenu</span></span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.addmenu" title="Link to this definition">#</a></dt>
+<dd><p>The add menu that is shown when the add button is pressed</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.mainmenu">
+<span class="sig-name descname"><span class="pre">mainmenu</span></span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.mainmenu" title="Link to this definition">#</a></dt>
+<dd><p>The main menu that is shown when the menu button is pressed</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.session">
+<span class="sig-name descname"><span class="pre">session</span></span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.session" title="Link to this definition">#</a></dt>
+<dd><p>The session object that is used to login to instagram</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dialog">
+<span class="sig-name descname"><span class="pre">dialog</span></span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dialog" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.data">
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.data" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.selected">
+<span class="sig-name descname"><span class="pre">selected</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.selected" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.table">
+<span class="sig-name descname"><span class="pre">table</span></span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.table" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.content_cls">
+<span class="sig-name descname"><span class="pre">content_cls</span></span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.content_cls" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_temp_data">
+<span class="sig-name descname"><span class="pre">csv_temp_data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_temp_data" title="Link to this definition">#</a></dt>
+<dd><p>The data that is used to store the csv data temporarily until verification</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_failed_data">
+<span class="sig-name descname"><span class="pre">csv_failed_data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_failed_data" title="Link to this definition">#</a></dt>
+<dd><p>The data that is used to store the csv data that failed verification</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.on_enter">
+<span class="sig-name descname"><span class="pre">on_enter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.on_enter" title="Link to this definition">#</a></dt>
+<dd><p>Fired when the entering the screen. Is used to check if the message
+screen was added and if so it is deleted</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.create_datatable">
+<span class="sig-name descname"><span class="pre">create_datatable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.create_datatable" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.edit_selection">
+<span class="sig-name descname"><span class="pre">edit_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.edit_selection" title="Link to this definition">#</a></dt>
+<dd><p>Function that is called when there is any change
+to the selection of accounts</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_delete">
+<span class="sig-name descname"><span class="pre">verify_delete</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_delete" title="Link to this definition">#</a></dt>
+<dd><p>Verifies if the user wants to delete the selected accounts</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.delete_selected">
+<span class="sig-name descname"><span class="pre">delete_selected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.delete_selected" title="Link to this definition">#</a></dt>
+<dd><p>Removes the selected accounts from the list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.open_filepicker">
+<span class="sig-name descname"><span class="pre">open_filepicker</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.open_filepicker" title="Link to this definition">#</a></dt>
+<dd><p>Opens the file picker to select a directory to export csv to</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.export_csv">
+<span class="sig-name descname"><span class="pre">export_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.export_csv" title="Link to this definition">#</a></dt>
+<dd><p>Exports the data to a csv file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.import_csv">
+<span class="sig-name descname"><span class="pre">import_csv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.import_csv" title="Link to this definition">#</a></dt>
+<dd><p>Imports the data from a csv file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen._import_csv_file">
+<span class="sig-name descname"><span class="pre">_import_csv_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._import_csv_file" title="Link to this definition">#</a></dt>
+<dd><p>Imports the data from a csv file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_accounts">
+<span class="sig-name descname"><span class="pre">verify_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_accounts" title="Link to this definition">#</a></dt>
+<dd><p>Validates the accounts in the list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen._verify_accounts">
+<span class="sig-name descname"><span class="pre">_verify_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._verify_accounts" title="Link to this definition">#</a></dt>
+<dd><p>Verifies the accounts in the list</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dont_verify_accounts">
+<span class="sig-name descname"><span class="pre">dont_verify_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dont_verify_accounts" title="Link to this definition">#</a></dt>
+<dd><p>Adds the accounts from the csv file without verifying</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_hashtag_dialog">
+<span class="sig-name descname"><span class="pre">show_hashtag_dialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_hashtag_dialog" title="Link to this definition">#</a></dt>
+<dd><p>Shows the hashtag dialog</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_follower_popup">
+<span class="sig-name descname"><span class="pre">show_follower_popup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_follower_popup" title="Link to this definition">#</a></dt>
+<dd><p>Shows the follower popup</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_follow_accounts">
+<span class="sig-name descname"><span class="pre">get_follow_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_follow_accounts" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_follow_accounts">
+<span class="sig-name descname"><span class="pre">_get_follow_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_follow_accounts" title="Link to this definition">#</a></dt>
+<dd><p>gets the accounts from the followers of the account</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_following_dialog">
+<span class="sig-name descname"><span class="pre">show_following_dialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_following_dialog" title="Link to this definition">#</a></dt>
+<dd><p>Shows the following dialog</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_following_accounts">
+<span class="sig-name descname"><span class="pre">get_following_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_following_accounts" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_following_accounts">
+<span class="sig-name descname"><span class="pre">_get_following_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_following_accounts" title="Link to this definition">#</a></dt>
+<dd><p>gets the accounts from the following of the account</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_manual_dialog">
+<span class="sig-name descname"><span class="pre">show_manual_dialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_manual_dialog" title="Link to this definition">#</a></dt>
+<dd><p>Shows the Manual entry of accounts</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.add_manual_accounts">
+<span class="sig-name descname"><span class="pre">add_manual_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">widget</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.add_manual_accounts" title="Link to this definition">#</a></dt>
+<dd><p>Adds the accounts from the manual dialog</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_hashtag_accounts">
+<span class="sig-name descname"><span class="pre">_get_hashtag_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hashtags_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_hashtag_accounts" title="Link to this definition">#</a></dt>
+<dd><p>gets the first certain number of accounts from each hashtag</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen._update_table">
+<span class="sig-name descname"><span class="pre">_update_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._update_table" title="Link to this definition">#</a></dt>
+<dd><p>Updates the table with the data</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_mainmenu">
+<span class="sig-name descname"><span class="pre">show_mainmenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_mainmenu" title="Link to this definition">#</a></dt>
+<dd><p>Shows the menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_add_menu">
+<span class="sig-name descname"><span class="pre">show_add_menu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_add_menu" title="Link to this definition">#</a></dt>
+<dd><p>Shows the add menu</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.navigate_to_message">
+<span class="sig-name descname"><span class="pre">navigate_to_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.navigate_to_message" title="Link to this definition">#</a></dt>
+<dd><p>Navigates to the message screen</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_settings_dialog">
+<span class="sig-name descname"><span class="pre">show_settings_dialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_settings_dialog" title="Link to this definition">#</a></dt>
+<dd><p>Shows the settings dialog</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.launch_instance">
+<span class="sig-name descname"><span class="pre">launch_instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.launch_instance" title="Link to this definition">#</a></dt>
+<dd><p>Launches a new instance of the program</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_about_dialog">
+<span class="sig-name descname"><span class="pre">show_about_dialog</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_about_dialog" title="Link to this definition">#</a></dt>
+<dd><p>Shows the about dialog</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ui.accountselectscreen.accountselectscreen.AccountSelectScreen.switch_user">
+<span class="sig-name descname"><span class="pre">switch_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.switch_user" title="Link to this definition">#</a></dt>
+<dd><p>Takes the user back to the user selection screen, clears the current screen and session</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-contents">Module Contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes">Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.addmenu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.addmenu</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.mainmenu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.mainmenu</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.session"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.session</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.dialog</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.data"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.selected"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.selected</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.table"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.table</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.content_cls"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.content_cls</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_temp_data"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.csv_temp_data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.csv_failed_data"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.csv_failed_data</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.on_enter"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.on_enter()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.create_datatable"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.create_datatable()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.edit_selection"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.edit_selection()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_delete"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.verify_delete()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.delete_selected"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.delete_selected()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.open_filepicker"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.open_filepicker()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.export_csv"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.export_csv()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.import_csv"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.import_csv()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._import_csv_file"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._import_csv_file()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.verify_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.verify_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._verify_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._verify_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.dont_verify_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.dont_verify_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_hashtag_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_hashtag_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_follower_popup"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_follower_popup()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_follow_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.get_follow_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_follow_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._get_follow_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_following_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_following_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.get_following_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.get_following_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_following_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._get_following_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_manual_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_manual_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.add_manual_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.add_manual_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._get_hashtag_accounts"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._get_hashtag_accounts()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen._update_table"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen._update_table()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_mainmenu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_mainmenu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_add_menu"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_add_menu()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.navigate_to_message"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.navigate_to_message()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_settings_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_settings_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.launch_instance"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.launch_instance()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.show_about_dialog"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.show_about_dialog()</span></code></a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#ui.accountselectscreen.accountselectscreen.AccountSelectScreen.switch_user"><code class="docutils literal notranslate"><span class="pre">AccountSelectScreen.switch_user()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Oxlac LLP
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Oxlac LLP.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
