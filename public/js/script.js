@@ -25,7 +25,7 @@ $(document).ready(function(){
 	});
 });
 
-$("#hidde-custom-cursor").hover(function() {
+$("#hidden-custom-cursor").hover(function() {
 	$(".cursor").hide();
 	
   }, function() {
