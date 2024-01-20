@@ -24,3 +24,10 @@ $(document).ready(function(){
 		lax.updateElements();
 	});
 });
+
+$("#hidden-custom-cursor").hover(function() {
+	$(".cursor").hide();
+	
+  }, function() {
+	$(".cursor").show();
+  })
